@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desert Delights</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Desert Delights</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section with a Background Image -->
+    <section id="home" class="home-section">
+        <h2>Our Sweet Treats Await You!</h2>
+        <img src="{{ url_for('static', filename='images/Delicious_deserts.jpg') }}" alt="Delicious Desserts">
+        <p>Indulge in our wide variety of desserts, each hand-crafted to bring you the sweetest joy. From creamy cakes to crispy baklava, there's something to satisfy every sweet tooth!</p>
+    </section>
+
+    <!-- Menu Section with Dessert Images -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="dessert-item">
+            <img src="{{ url_for('static', filename='images/Chocolate_cake.jpg') }}" alt="Chocolate Cake">
+            <h3>Chocolate Cake</h3>
+            <p>Rich, moist, and packed with layers of decadent chocolate ganache...</p>
+        </div>
+
+        <div class="dessert-item">
+            <img src="{{ url_for('static', filename='images/Strawberry.jpg') }}" alt="Strawberry Cheesecake">
+            <h3>Strawberry Cheesecake</h3>
+            <p>Light, creamy, and topped with fresh strawberries...</p>
+        </div>
+
+        <div class="dessert-item">
+            <img src="{{ url_for('static', filename='images/Baklava.jpg') }}" alt="Baklava">
+            <h3>Baklava</h3>
+            <p>Flaky, nutty, and drizzled with honey syrup...</p>
+        </div>
+
+        <div class="dessert-item">
+            <img src="{{ url_for('static', filename='images/Ice.jpg') }}" alt="Ice Cream Sundae">
+            <h3>Ice Cream Sundae</h3>
+            <p>Layered with rich ice cream, whipped cream...</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email us at: <a href="mailto:info@desertdelights.com">info@desertdelights.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Desert Delights</p>
+    </footer>
+</body>
+</html>
